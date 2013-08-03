@@ -1,0 +1,41 @@
+{
+  "name": "spot",
+  "version": "0.0.0",
+  "description": "Spot, the file retriever",
+  "author": {
+    "name": "John Bulcher",
+  },
+  "contributors": [
+    {
+      "name": "John Bulcher",
+    }
+  ],
+  "keywords": [],
+  "homepage": "https://github.com/jbulchergist/spot",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jbulchergist/spot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jbulchergist/spot/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib/spot",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "vows": "*"
+  },
+  "scripts": {
+    "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js test/**/*-test.js test/context/http/*-test.js"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "readmeFilename": "README.md",
+}
