@@ -18,6 +18,8 @@ A simple file retriever capable of preprocessing
 ## Unconfigured
 
 ```js
+var spot = require('spot');
+
 spot.fetch('utf8', 'assets/css/main.css', function(err, data){
 	// do something useful
 });
@@ -42,6 +44,6 @@ var cb2 = function(err, data) {
 spot.train('css', 'assets/css', 'utf8', cb, preprocessor);
 
 spot.fetch('css', 'main.css');
-// you can override the callback
+// you can override the callback configured
 spot.fetch('css', 'main.css', cb2);
 ```
